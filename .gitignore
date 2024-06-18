@@ -1,0 +1,4 @@
+.env
+cars.db
+.idea
+__pycache__
