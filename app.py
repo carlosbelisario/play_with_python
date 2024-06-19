@@ -1,9 +1,6 @@
-import os
-from dotenv import load_dotenv
-load_dotenv()
-from models import *
+from cars import *
 
-#get first brand "chevrolet" by migration potition
-brand = Brand.get(Brand.id == 1)
-#create a car
-Car = Car.create(brand = brand, model = 'cruze', color = 'red')
+# create_car(brand=1, model='cruze', color='rojo')
+# print(get_car(id=2))
+# print(get_all_car())
+delete_car(id=2)
