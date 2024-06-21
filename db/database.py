@@ -1,14 +1,11 @@
 import mysql.connector
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
 def connect():
-    db_host = os.getenv('DATABASE_HOST')
-    db_name = os.getenv('DATABASE_NAME')
-    db_user = os.getenv('DATABASE_USER')
-    db_password = os.getenv('DATABASE_PASSWORD')
-    db_port = os.getenv('DATABASE_PORT')
+    db_host = 'localhost'
+    db_name = 'cars'
+    db_user = 'root'
+    db_password = 'asdf'
+    db_port = '3340' # por default es 3306
     try:
         # connection = mysql.connector.connect(
         connection = mysql.connector.connect(
